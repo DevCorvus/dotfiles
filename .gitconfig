@@ -1,0 +1,7 @@
+[user]
+	name = DevCorvus
+	email = devcorvus.contact@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
