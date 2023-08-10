@@ -5,6 +5,10 @@ font:
     family: Hack
     style: Regular
 
+# Opacity
+window:
+  opacity: 0.95
+
 # TokyoNight Alacritty Colors
 colors:
   # Default colors
