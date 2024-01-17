@@ -1,3 +1,4 @@
+#!/bin/sh
 sh ~/.config/xautolock/launch.sh &
 nitrogen --restore &
 picom &
