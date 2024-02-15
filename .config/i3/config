@@ -13,7 +13,6 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-# font pango:monospace 8
 font pango:Hack Regular 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -186,9 +185,28 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#         status_command i3status
-# }
+bar {
+    position bottom
+    status_command i3status-rs
+    colors {
+    	background #1a1b26
+	    statusline #c0caf5
+	    separator #c0caf5
+
+ 	    focused_workspace  #15161e #bb9af7 #1a1b26
+        active_workspace   #15161e #bb9af7 #1a1b26
+        inactive_workspace #15161e #1a1b26 #a9b1d6
+        urgent_workspace   #15161e #bd2c40 #1a1b26
+    }
+    # disable all mouse events on workspace buttons
+    bindsym button1 nop
+    bindsym button2 nop
+    bindsym button3 nop
+    bindsym button4 nop
+    bindsym button5 nop
+    bindsym button6 nop
+    bindsym button7 nop
+}
 
 # Color scheme
 # class                 border  backgr. text    indicator child_border
@@ -200,12 +218,8 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-# Status bar
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
-
 # Keybindings
 # Take screenshot
-# bindsym PrtScrn exec "flameshot gui"
 bindsym Print exec "flameshot gui"
 #Lock screen
 bindsym Control+$mod+l exec "i3lock -c 000000"
@@ -230,3 +244,4 @@ exec --no-startup-id alacritty
 exec --no-startup-id ~/Applications/Obsidian.AppImage
 exec --no-startup-id vlc --no-playlist-autostart ~/Music
 exec --no-startup-id gnome-clocks
+
