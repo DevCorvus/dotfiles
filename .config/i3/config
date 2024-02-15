@@ -196,7 +196,7 @@ bar {
  	    focused_workspace  #15161e #bb9af7 #1a1b26
         active_workspace   #15161e #bb9af7 #1a1b26
         inactive_workspace #15161e #1a1b26 #a9b1d6
-        urgent_workspace   #15161e #bd2c40 #1a1b26
+        urgent_workspace   #bb9af7 #1a1b26 #a9b1d6
     }
     # disable all mouse events on workspace buttons
     bindsym button1 nop
@@ -226,6 +226,10 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym Print exec "flameshot gui"
 # Lock screen
 bindsym Control+$mod+l exec "i3lock -c 000000"
+# Shutdown
+bindsym Control+$mod+s exec --no-startup-id systemctl poweroff
+# Reboot
+bindsym Control+$mod+r exec --no-startup-id systemctl reboot
 
 # Set
 title_align center
@@ -247,4 +251,3 @@ exec --no-startup-id alacritty
 exec --no-startup-id ~/Applications/Obsidian.AppImage
 exec --no-startup-id vlc --no-playlist-autostart ~/Music
 exec --no-startup-id gnome-clocks
-
