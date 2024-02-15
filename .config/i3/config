@@ -55,7 +55,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -219,9 +219,12 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # Keybindings
+
+# Application launcher
+bindsym $mod+d exec --no-startup-id rofi -show drun
 # Take screenshot
 bindsym Print exec "flameshot gui"
-#Lock screen
+# Lock screen
 bindsym Control+$mod+l exec "i3lock -c 000000"
 
 # Set
