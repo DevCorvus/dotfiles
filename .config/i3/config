@@ -223,9 +223,9 @@ client.background       #ffffff
 # Application launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun
 # Take screenshot
-bindsym Print exec "flameshot gui"
+bindsym Print exec --no-startup-id flameshot gui
 # Lock screen
-bindsym Control+$mod+l exec "i3lock -c 000000"
+bindsym Control+$mod+l exec --no-startup-id i3lock -c 000000
 # Shutdown
 bindsym Control+$mod+s exec --no-startup-id systemctl poweroff
 # Reboot
@@ -251,3 +251,4 @@ exec --no-startup-id alacritty
 exec --no-startup-id ~/Applications/Obsidian.AppImage
 exec --no-startup-id vlc --no-playlist-autostart ~/Music
 exec --no-startup-id gnome-clocks
+
