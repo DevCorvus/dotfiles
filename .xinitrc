@@ -4,7 +4,7 @@ nitrogen --restore &
 picom &
 unclutter &
 flameshot &
-redshift &
+redshift-gtk &
 safeeyes &
 indicator-sound-switcher &
 exec i3
