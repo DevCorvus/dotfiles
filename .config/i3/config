@@ -189,11 +189,9 @@ bar {
     position bottom
     status_command i3status-rs
     colors {
-    	background #1a1b26
-	    statusline #c0caf5
-	    separator #c0caf5
+        background #1a1b26
 
- 	    focused_workspace  #15161e #bb9af7 #1a1b26
+        focused_workspace  #15161e #bb9af7 #1a1b26
         active_workspace   #15161e #bb9af7 #1a1b26
         inactive_workspace #15161e #1a1b26 #a9b1d6
         urgent_workspace   #bb9af7 #1a1b26 #a9b1d6
