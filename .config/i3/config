@@ -240,7 +240,6 @@ assign [class="Alacritty"] $ws3
 # assign [class=""] $ws4
 assign [class="obsidian"] $ws5
 assign [class="vlc"] $ws6
-assign [class="org.gnome.clocks"] $ws7
 
 # Programs
 exec --no-startup-id sh -c "discord; sleep 5"
@@ -248,5 +247,4 @@ exec --no-startup-id brave
 exec --no-startup-id alacritty
 exec --no-startup-id ~/Applications/Obsidian.AppImage
 exec --no-startup-id vlc --no-playlist-autostart ~/Music
-exec --no-startup-id gnome-clocks
 
