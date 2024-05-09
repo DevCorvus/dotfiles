@@ -122,3 +122,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export SDKMAN_DIR="$HOME/.sdkman"
 
+# composer
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
