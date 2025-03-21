@@ -1,9 +1,4 @@
-# SCRIPTS
-
-source /usr/share/nvm/init-nvm.sh
-
 # ALIASES
-alias wd='cd ~/Dev/code/projects'
 alias edit:zsh='nvim ~/.oh-my-zsh/custom/devcorvus.zsh'
 alias edit:nvim='nvim ~/.config/nvim'
 alias edit:hosts='sudo nvim /etc/hosts'
