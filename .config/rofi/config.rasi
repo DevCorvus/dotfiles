@@ -141,7 +141,7 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 
-  modes: "drun,run";
+  modes: "drun,run,filebrowser";
   font: "Hack Regular 10";
   show-icons: true;
 
