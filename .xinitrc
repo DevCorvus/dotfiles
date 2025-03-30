@@ -1,6 +1,7 @@
 #!/bin/sh
 setxkbmap -layout us -variant intl # Xorg keyboard
-sh ~/.config/xautolock/launch.sh &
+xset s 600 # Screensaver (10 mins)
+xautolock -detectsleep -time 10 -locker "i3lock --nofork -c 000000" & # Autolock (every 10 mins)
 nitrogen --restore &
 picom &
 unclutter &
